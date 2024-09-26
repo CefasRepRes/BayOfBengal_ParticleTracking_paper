@@ -2,7 +2,7 @@
 
 ## Preprocessing
 OceanParcels run scripts and kernels.
-Scripts are separated by country release locations. Two different forcings were used - ROMS (1/48° resolution, no data assimilation) and CMEMS (1/12° resolution, data assimilation).
+Scripts are separated by country release locations and season. Monsoon season runs from 1st June 2018 - 30th September 2019, post-monsoon season runs from 1st October 2018 - 30th September 2019, pre-monsoon season runs from 1st February 2019 - 30th September 2019. Particles are released daily for four months in each case. Two different forcings were used - ROMS (1/48° resolution, no data assimilation) and CMEMS (1/12° resolution, data assimilation).
 ### Sensitivity studies
 Run scripts to compare hourly versus daily forcing. Uses same kernels as in main run scripts.
 ### Validation
