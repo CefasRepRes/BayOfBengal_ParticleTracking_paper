@@ -19,3 +19,9 @@ Notes:
 
 * Calculations of separation distances between observed and simulated drifters are found at the bottom of the sep_dist_calc.ipynb script. Identifying the points of the drifter/particle trajectories to compare was done by hand via a combination of Excel and Python so the script is rather large and isn't really code so much as lots of copied and pasted lines to be commented and uncommented.    
 
+## License information
+THIS INFORMATION IS LICENSED UNDER THE CONDITIONS OF THE OPEN GOVERNMENT LICENCE found at: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3
+
+The following attribution statement MUST then be cited in your products and applications when using this information.
+
+Contains public sector information licensed under the Open Government license v3
