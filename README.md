@@ -1,4 +1,4 @@
-# Code to accompany paper submitted to Ocean Science ()
+# Code to accompany [paper](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3096/) submitted to Ocean Science 
 
 ## Preprocessing
 OceanParcels run scripts and kernels.
