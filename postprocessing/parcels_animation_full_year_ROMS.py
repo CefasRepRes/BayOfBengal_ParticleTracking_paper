@@ -44,7 +44,7 @@ particle_file_Indo3 = '/gpfs/home/rpe16nbu/projects/ocpp_mo1/data/output/paper_d
 #velocity_file_v = '/gpfs/home/rpe16nbu/projects/ocpp_mo1/data/input/processed/paper_data/ocean_velocities_v_ROMS_Feb-Sept2019_daily.nc'
 
 # output files - what to call the animation?
-fig_name = '/gpfs/home/rpe16nbu/projects/ocpp_mo1/plots/paper_data/BoB_all_countries_uniform_ROMS_daily_Jun2018-Sept2019_full_year_weekly_frames.gif'
+fig_name = '/gpfs/home/rpe16nbu/projects/ocpp_mo1/plots/paper_data/BoB_all_countries_uniform_ROMS_daily_Jun2018-Sept2019_full_year_fortnightly_cbfriendly.gif'
 # set parameters
 interval = 300 # larger number makes video slower
 # particle timestep - were they output hourly or daily? Comment or uncomment accordingly. Script assumes ocean velocities are hourly.
@@ -266,24 +266,24 @@ ax.set_xticklabels(ax.get_xticks(), fontsize=20)#, fontweight='bold')
 
 # scatter plot, first frame
 # separate colours don't work because they change when other particles get beacehed and disappear. ANd different colours dont start from the same region because of this.
-scat_SL1 = ax.scatter(lon_p_SL1[time_id_SL1], lat_p_SL1[time_id_SL1], color='r', s=10) # plot particle 1 start point
-scat_India1 = ax.scatter(lon_p_India1[time_id_India1], lat_p_India1[time_id_India1],color='yellow', s=10)
-scat_Bang1 = ax.scatter(lon_p_Bang1[time_id_Bang1], lat_p_Bang1[time_id_Bang1],color='pink', s=10)
-scat_Myan1 = ax.scatter(lon_p_Myan1[time_id_Myan1], lat_p_Myan1[time_id_Myan1],color='lime', s=10)
-scat_Thai1 = ax.scatter(lon_p_Thai1[time_id_Thai1], lat_p_Thai1[time_id_Thai1],color='grey', s=10)
-scat_Indo1 = ax.scatter(lon_p_Indo1[time_id_Indo1], lat_p_Indo1[time_id_Indo1],color='darkorange', s=10)
-scat_SL2 = ax.scatter(lon_p_SL2[time_id_SL2], lat_p_SL2[time_id_SL2], color='r', s=10) # plot particle 1 start point
-scat_India2 = ax.scatter(lon_p_India2[time_id_India2], lat_p_India2[time_id_India2],color='yellow', s=10)
-scat_Bang2 = ax.scatter(lon_p_Bang2[time_id_Bang2], lat_p_Bang2[time_id_Bang2],color='pink', s=10)
-scat_Myan2 = ax.scatter(lon_p_Myan2[time_id_Myan2], lat_p_Myan2[time_id_Myan2],color='lime', s=10)
-scat_Thai2 = ax.scatter(lon_p_Thai2[time_id_Thai2], lat_p_Thai2[time_id_Thai2],color='grey', s=10)
-scat_Indo2 = ax.scatter(lon_p_Indo2[time_id_Indo2], lat_p_Indo2[time_id_Indo2],color='darkorange', s=10)
-scat_SL3 = ax.scatter(lon_p_SL3[time_id_SL3], lat_p_SL3[time_id_SL3], color='r', s=10) # plot particle 1 start point
-scat_India3 = ax.scatter(lon_p_India3[time_id_India3], lat_p_India3[time_id_India3],color='yellow', s=10)
-scat_Bang3 = ax.scatter(lon_p_Bang3[time_id_Bang3], lat_p_Bang3[time_id_Bang3],color='pink', s=10)
-scat_Myan3 = ax.scatter(lon_p_Myan3[time_id_Myan3], lat_p_Myan3[time_id_Myan3],color='lime', s=10)
-scat_Thai3 = ax.scatter(lon_p_Thai3[time_id_Thai3], lat_p_Thai3[time_id_Thai3],color='grey', s=10)
-scat_Indo3 = ax.scatter(lon_p_Indo3[time_id_Indo3], lat_p_Indo3[time_id_Indo3],color='darkorange', s=10)
+scat_SL1 = ax.scatter(lon_p_SL1[time_id_SL1], lat_p_SL1[time_id_SL1], color='lightpink', s=10) # plot particle 1 start point
+scat_India1 = ax.scatter(lon_p_India1[time_id_India1], lat_p_India1[time_id_India1],color='gold', s=10)
+scat_Bang1 = ax.scatter(lon_p_Bang1[time_id_Bang1], lat_p_Bang1[time_id_Bang1],color='crimson', s=10)
+scat_Myan1 = ax.scatter(lon_p_Myan1[time_id_Myan1], lat_p_Myan1[time_id_Myan1],color='mediumaquamarine', s=10)
+scat_Thai1 = ax.scatter(lon_p_Thai1[time_id_Thai1], lat_p_Thai1[time_id_Thai1],color='k', s=10)
+scat_Indo1 = ax.scatter(lon_p_Indo1[time_id_Indo1], lat_p_Indo1[time_id_Indo1],color='cyan', s=10)
+scat_SL2 = ax.scatter(lon_p_SL2[time_id_SL2], lat_p_SL2[time_id_SL2], color='lightpink', s=10) # plot particle 1 start point
+scat_India2 = ax.scatter(lon_p_India2[time_id_India2], lat_p_India2[time_id_India2],color='gold', s=10)
+scat_Bang2 = ax.scatter(lon_p_Bang2[time_id_Bang2], lat_p_Bang2[time_id_Bang2],color='crimson', s=10)
+scat_Myan2 = ax.scatter(lon_p_Myan2[time_id_Myan2], lat_p_Myan2[time_id_Myan2],color='mediumaquamarine', s=10)
+scat_Thai2 = ax.scatter(lon_p_Thai2[time_id_Thai2], lat_p_Thai2[time_id_Thai2],color='k', s=10)
+scat_Indo2 = ax.scatter(lon_p_Indo2[time_id_Indo2], lat_p_Indo2[time_id_Indo2],color='cyan', s=10)
+scat_SL3 = ax.scatter(lon_p_SL3[time_id_SL3], lat_p_SL3[time_id_SL3], color='lightpink', s=10) # plot particle 1 start point
+scat_India3 = ax.scatter(lon_p_India3[time_id_India3], lat_p_India3[time_id_India3],color='gold', s=10)
+scat_Bang3 = ax.scatter(lon_p_Bang3[time_id_Bang3], lat_p_Bang3[time_id_Bang3],color='crimson', s=10)
+scat_Myan3 = ax.scatter(lon_p_Myan3[time_id_Myan3], lat_p_Myan3[time_id_Myan3],color='mediumaquamarine', s=10)
+scat_Thai3 = ax.scatter(lon_p_Thai3[time_id_Thai3], lat_p_Thai3[time_id_Thai3],color='k', s=10)
+scat_Indo3 = ax.scatter(lon_p_Indo3[time_id_Indo3], lat_p_Indo3[time_id_Indo3],color='cyan', s=10)
 
 # Create custom legend handles
 legend_handles = [
@@ -356,7 +356,7 @@ def animate(ii):
     title = ax.set_title('Position at ' + str(time_subset[ii]), fontsize=25)
 
 # Save the animation
-anim = FuncAnimation(fig, animate, interval=interval, frames=range(0, len(speed_subset)-1, 7), repeat=True) # interval is number of milliseconds between frames
+anim = FuncAnimation(fig, animate, interval=interval, frames=range(0, len(speed_subset)-1, 14)) # interval is number of milliseconds between frames
 #anim = FuncAnimation(fig, animate, interval=interval, frames=len(speed_subset)-1, repeat=True) # interval is number of milliseconds between frames
 anim.save(fig_name, writer='imagemagick')
 
@@ -396,18 +396,18 @@ time_id_Indo2 = np.where(time_p_Indo2 == timerange2[200-122])
 
 # scatter plot, first frame
 # separate colours don't work because they change when other particles get beacehed and disappear. ANd different colours dont start from the same region because of this.
-scat_SL1 = ax.scatter(lon_p_SL1[time_id_SL1], lat_p_SL1[time_id_SL1], color='r', s=10) # plot particle 1 start point
-scat_India1 = ax.scatter(lon_p_India1[time_id_India1], lat_p_India1[time_id_India1],color='yellow', s=10)
-scat_Bang1 = ax.scatter(lon_p_Bang1[time_id_Bang1], lat_p_Bang1[time_id_Bang1],color='pink', s=10)
-scat_Myan1 = ax.scatter(lon_p_Myan1[time_id_Myan1], lat_p_Myan1[time_id_Myan1],color='lime', s=10)
-scat_Thai1 = ax.scatter(lon_p_Thai1[time_id_Thai1], lat_p_Thai1[time_id_Thai1],color='grey', s=10)
-scat_Indo1 = ax.scatter(lon_p_Indo1[time_id_Indo1], lat_p_Indo1[time_id_Indo1],color='darkorange', s=10)
-scat_SL2 = ax.scatter(lon_p_SL2[time_id_SL2], lat_p_SL2[time_id_SL2], color='r', s=10) # plot particle 1 start point
-scat_India2 = ax.scatter(lon_p_India2[time_id_India2], lat_p_India2[time_id_India2],color='yellow', s=10)
-scat_Bang2 = ax.scatter(lon_p_Bang2[time_id_Bang2], lat_p_Bang2[time_id_Bang2],color='pink', s=10)
-scat_Myan2 = ax.scatter(lon_p_Myan2[time_id_Myan2], lat_p_Myan2[time_id_Myan2],color='lime', s=10)
-scat_Thai2 = ax.scatter(lon_p_Thai2[time_id_Thai2], lat_p_Thai2[time_id_Thai2],color='grey', s=10)
-scat_Indo2 = ax.scatter(lon_p_Indo2[time_id_Indo2], lat_p_Indo2[time_id_Indo2],color='darkorange', s=10)
+scat_SL1 = ax.scatter(lon_p_SL1[time_id_SL1], lat_p_SL1[time_id_SL1], color='lightpink', s=10) # plot particle 1 start point
+scat_India1 = ax.scatter(lon_p_India1[time_id_India1], lat_p_India1[time_id_India1],color='gold', s=10)
+scat_Bang1 = ax.scatter(lon_p_Bang1[time_id_Bang1], lat_p_Bang1[time_id_Bang1],color='crimson', s=10)
+scat_Myan1 = ax.scatter(lon_p_Myan1[time_id_Myan1], lat_p_Myan1[time_id_Myan1],color='mediumaquamarine', s=10)
+scat_Thai1 = ax.scatter(lon_p_Thai1[time_id_Thai1], lat_p_Thai1[time_id_Thai1],color='k', s=10)
+scat_Indo1 = ax.scatter(lon_p_Indo1[time_id_Indo1], lat_p_Indo1[time_id_Indo1],color='cyan', s=10)
+scat_SL2 = ax.scatter(lon_p_SL2[time_id_SL2], lat_p_SL2[time_id_SL2], color='lightpink', s=10) # plot particle 1 start point
+scat_India2 = ax.scatter(lon_p_India2[time_id_India2], lat_p_India2[time_id_India2],color='gold', s=10)
+scat_Bang2 = ax.scatter(lon_p_Bang2[time_id_Bang2], lat_p_Bang2[time_id_Bang2],color='crimson', s=10)
+scat_Myan2 = ax.scatter(lon_p_Myan2[time_id_Myan2], lat_p_Myan2[time_id_Myan2],color='mediumaquamarine', s=10)
+scat_Thai2 = ax.scatter(lon_p_Thai2[time_id_Thai2], lat_p_Thai2[time_id_Thai2],color='k', s=10)
+scat_Indo2 = ax.scatter(lon_p_Indo2[time_id_Indo2], lat_p_Indo2[time_id_Indo2],color='cyan', s=10)
 
 # Create custom legend handles
 legend_handles = [
@@ -426,6 +426,6 @@ plt.legend(handles=legend_handles,
            ncol=1,
            fontsize=20)
 
-fig.savefig("/gpfs/home/rpe16nbu/projects/ocpp_mo1/plots/paper_data/ROMS_anim_still", bbox_inches='tight', facecolor='white', transparent=False)
+fig.savefig("/gpfs/home/rpe16nbu/projects/ocpp_mo1/plots/paper_data/ROMS_anim_still_cbfriendly", bbox_inches='tight', facecolor='white', transparent=False)
 
 
